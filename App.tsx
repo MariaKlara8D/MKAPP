@@ -3,19 +3,19 @@ import {View, Text, StyleSheet } from "react-native";
 
 export default function app () {
   return(
-    <View style={styles.conteiner}> 
-      <View style = {styles.box1}>
+    <View style ={stylestilo.conteinerqn}> 
+      <View style = {stylestilo.box1}>
         <Text>Box 1</Text>
       </View>
-      <View>
+      <View style ={stylestilo.box1}>
         <Text>Box 2</Text>
       </View>
     </View>
   )
 }
 
-const styles = StyleSheet.create({
-  conteiner:{
+const stylestilo = StyleSheet.create({
+  conteinerqn:{
     flex: 1,
     justifyContent:'center',
     alignItems:'center',
@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
     justifyContent:"center",
     alignItems:'center',
     marginBottom:20
+  }
+  caixa2: {
+    backgroundColor: '#555555'
   }
     
 
